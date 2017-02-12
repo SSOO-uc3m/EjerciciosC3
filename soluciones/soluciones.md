@@ -162,12 +162,12 @@ tanto la opción correcta, pues la ejecución, por lo tanto, de **p2 = 4 hace qu
 
 7.- ¿Cual de las siguientes expresiones permite reservar memoria para un vector de 10 elementos de tipo float?
 
-```
-(float) malloc(10);
-(float *) malloc(10);
-(float *) malloc(10 * sizeof(float))
-(float *) malloc(10 * sizeof(float*));
-```
+
+* `(float) malloc(10);`
+* `(float *) malloc(10);`
+* `(float *) malloc(10 * sizeof(float));`
+* `(float *) malloc(10 * sizeof(float*));`
+
 
 >El “molde”, conversion () ms! de tipos de la primera línea hace que no compile. La segunda línea pide memoria para 10 bytes, no para 10 variables de tipo float. La tercera si lo pide, por lo que es correcta. La última pide espacio suficiente para albergar 10 elementos de tipo float*, que no necesariamente serán del mismo tamaño que 10 variables float, por lo que es incorrecta.
 
