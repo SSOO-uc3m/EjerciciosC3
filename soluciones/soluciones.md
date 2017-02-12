@@ -169,11 +169,10 @@ tanto la opción correcta, pues la ejecución, por lo tanto, de **p2 = 4 hace qu
 (float *) malloc(10 * sizeof(float*));
 ```
 
->El “molde”, conversion () ms! de tipos de la primera línea hace que no compile. La segunda línea pide memoria para 10 bytes, no para 10 variables de tipo float.
-La tercera si lo pide, por lo que es correcta. La última pide espacio suficiente para albergar 10 elementos de tipo float*, que no necesariamente serán del mismo tamaño
-que 10 variables float, por lo que es incorrecta.
+>El “molde”, conversion () ms! de tipos de la primera línea hace que no compile. La segunda línea pide memoria para 10 bytes, no para 10 variables de tipo float. La tercera si lo pide, por lo que es correcta. La última pide espacio suficiente para albergar 10 elementos de tipo float*, que no necesariamente serán del mismo tamaño que 10 variables float, por lo que es incorrecta.
 
 8.- Después de ejecutar el siguiente fragmento de código:
+
 ```
 float nl = 10;
 float n2 = 5;
@@ -185,15 +184,13 @@ n2;
 q=*p+*p;
 ```
 Cual de las siguientes afirmaciones es correcta?
-*`n1 = 10 y n2 = 5`
 
-*`n1 = 10 y n2 = 10`
+* `n1 = 10 y n2 = 5`
 
-*`la sentencia *p==*p es ilegal`
+* `n1 = 10 y n2 = 10`
 
-*`n1 = 10 y n2 = 20`
-```
+* `la sentencia *p==*p es ilegal`
 
->El programa compila correctamente. Las dos primeras asignaciones hacen que p apunte a nl, y q a n2. La parte derecha de la última asignación suma el contenido de *p consigo
-mismo; como p apunta a nl, el resultado de la suma será 20. Ese valor es asignado al valor apuntado por q, que resulta ser 112. Por tanto, tras la ejecución nl no se modifica,
-pero n2 si (a través de q), y pasa a valer 20. La opción válida es, por lo tanto, la última.
+* `n1 = 10 y n2 = 20`
+
+> El programa compila correctamente. Las dos primeras asignaciones hacen que p apunte a nl, y q a n2. La parte derecha de la última asignación suma el contenido de *p consigo mismo; como p apunta a nl, el resultado de la suma será 20. Ese valor es asignado al valor apuntado por q, que resulta ser 112. Por tanto, tras la ejecución nl no se modifica, pero n2 si (a través de q), y pasa a valer 20. La opción válida es, por lo tanto, la última.
