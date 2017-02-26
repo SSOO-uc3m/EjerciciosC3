@@ -96,11 +96,12 @@ n2;
 q=*p+*p;
 ```
 Cual de las siguientes afirmaciones es correcta?
-*`n1 = 10 y n2 = 5`
 
-*`n1 = 10 y n2 = 10`
+* `n1 = 10 y n2 = 5`
 
-*`la sentencia *p==*p es ilegal`
+* `n1 = 10 y n2 = 10`
 
-*`n1 = 10 y n2 = 20`
-```
+* `la sentencia *p==*p es ilegal`
+
+* `n1 = 10 y n2 = 20`
+
