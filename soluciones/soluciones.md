@@ -11,8 +11,7 @@ var3 = &var2;
 
 > A var1 se le asigna un valor real, por lo que su tipo ha de ser o bien float, o bien double. Asumiremos que es float.
 var2 recibe la dirección donde está almacenada varl, por lo que var2 es un puntero. Como var1 es float, var2 tendrá por tipo float
-La línea *var3 significa que al vaor apuntado por var3 se le asigna var2. Es decir, el valor apuntado por var3 es del mismo tipo que var2. Por tanto, var3 es un puntero a un puntero a
-flotante: float
+La línea var3 = &var2 significa que al valor apuntado por var3 se le asigna var2. Es decir, el valor apuntado por var3 es del mismo tipo que var2. Por tanto, var3 es un puntero a un puntero flotante: float
 La última línea confirma nuestras tres suposiciones.
 
 2.- ¿Existe algún problema con el siguiente código?
