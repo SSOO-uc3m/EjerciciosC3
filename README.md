@@ -5,8 +5,8 @@ fragmento sea correcto:
 ```
 var1 = 5.5;
 var2 = &varl;
-var3 = var2;
-var2 = var1 + **var3;
+var3 = &var2;
+*var2 = var1 + **var3;
 ```
 
 2.- ¿Existe algún problema con el siguiente código?
