@@ -5,8 +5,8 @@ fragmento sea correcto:
 ```
 var1 = 5.5;
 var2 = &varl;
-var3 = var2;
-var2 = var1 + **var3;
+var3 = &var2;
+*var2 = var1 + **var3;
 ```
 
 > A var1 se le asigna un valor real, por lo que su tipo ha de ser o bien float, o bien double. Asumiremos que es float.
