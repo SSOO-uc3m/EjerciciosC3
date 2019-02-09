@@ -125,14 +125,14 @@ float a = 0.001;
 float *b;
 float *c;
 
-a;
-b;
-c + *b;
+b = &a;
+b = c;
+a = *c + *b;
 ```
 Cual de las siguientes afirmaciones es cierta?
 
 * Las variables b y c se almacenan en la misma dirección de memoria.
-* La sentencia *c = 4; modiñcaría el contenido de la variable a.
+* La sentencia *c = 4; modificaría el contenido de la variable a.
 * a tomará un valor indeterminado.
 * c almacena la dirección de la variable b.
 
@@ -177,8 +177,8 @@ float nl = 10;
 float n2 = 5;
 float *p, *q;
 
-n1;
-n2;
+p = &n1;
+q = &n2;
 
 q=*p+*p;
 ```
@@ -188,8 +188,8 @@ Cual de las siguientes afirmaciones es correcta?
 
 * `n1 = 10 y n2 = 10`
 
-* `la sentencia *p==*p es ilegal`
+* `la sentencia *p+*p es ilegal`
 
 * `n1 = 10 y n2 = 20`
 
-> El programa compila correctamente. Las dos primeras asignaciones hacen que p apunte a nl, y q a n2. La parte derecha de la última asignación suma el contenido de *p consigo mismo; como p apunta a nl, el resultado de la suma será 20. Ese valor es asignado al valor apuntado por q, que resulta ser 112. Por tanto, tras la ejecución nl no se modifica, pero n2 si (a través de q), y pasa a valer 20. La opción válida es, por lo tanto, la última.
+> El programa compila correctamente. Las dos primeras asignaciones hacen que p apunte a nl, y q a n2. La parte derecha de la última asignación suma el contenido de *p consigo mismo; como p apunta a n1, el resultado de la suma será 20. Ese valor es asignado al valor apuntado por q, que resulta ser 5. Por tanto, tras la ejecución n1 no se modifica, pero n2 si (a través de q), y pasa a valer 20. La opción válida es, por lo tanto, la última.
