@@ -46,9 +46,9 @@ float a = 0.001;
 float *b;
 float *c;
 
-a;
-b;
-c + *b;
+b = &a;
+b = c;
+a = *c + *b;
 ```
 Cual de las siguientes afirmaciones es cierta?
 
@@ -90,8 +90,8 @@ float nl = 10;
 float n2 = 5;
 float *p, *q;
 
-n1;
-n2;
+p = &n1;
+q = &n2;
 
 q=*p+*p;
 ```
